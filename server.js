@@ -14,7 +14,7 @@ app.use('/todos', todoRoute)
  
 db.sync()
   .then(() => {
-    app.listen(3456)
+    app.listen(7070)
   })
   .catch((err) => {
     console.error(err)
