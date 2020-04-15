@@ -79,7 +79,7 @@ route.patch('/:id',async (req,res)=>{
 route.get('/:id/notes', async (req, res) => {
   const getNotes = await Notes.findAll({
     where:{
-      notesId:{ [Op.eq] :  req.params.notesId  }
+      notesId:{ [Op.eq] :  req.params.id  }
     }
   })
   res.send(getNotes)
@@ -89,7 +89,7 @@ route.get('/:id/notes', async (req, res) => {
 route.post('/:id/notes', async (req, res) =>{
 
   const addNote =await Notes.create({
-    notesId:req.params.notesId,
+    notesId:req.params.id,
     notes:req.body.notes
   })
 
