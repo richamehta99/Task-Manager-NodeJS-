@@ -52,8 +52,8 @@ module.exports = {
     db, Todos, Notes
 }
 
-async function task(){
-    await db.sync()
-}
+// async function task(){
+//     await db.sync()
+// }
  
-task()
+// task()
