@@ -20,7 +20,7 @@ route.post('/', async (req, res) => {
     // if (typeof req.body.title !== 'string') {
     //   return res.status(400).send({ error: 'Task name not provided' })
     // }
-    console.log(req.body.title)
+    //console.log(req.body.title)
     if (req.body.status === 'true') {
       req.body.status = true
     } else {

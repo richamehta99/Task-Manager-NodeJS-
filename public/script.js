@@ -63,6 +63,7 @@ async function addTodos() {
     due: document.getElementById('due').value,
     priority: document.getElementById('priority').value
   }
+  console.log(task.title)
 
 const resp = await fetch('/todos', { method: 'POST' , body: JSON.stringify(task),
 headers: { "Content-type": "application/json; charset=UTF-8"}})
