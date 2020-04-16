@@ -1,6 +1,6 @@
 const { Router } = require('express')
 const { Todos, Notes } = require('../task-notes')
-const { Op } = require('Sequelize')
+const { Op } = require('sequelize')
 const route = Router()
 
 //API to get all tasks
